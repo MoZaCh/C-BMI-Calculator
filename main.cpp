@@ -10,7 +10,7 @@ int main()
     int choice = 0;
     string name;
     double height, weight, bmi;
-    bool quit = false;
+    bool quit = false; //Flag set to false for the do-while loop
 
     do
     {
@@ -28,13 +28,13 @@ int main()
             cin >> height;
             cout << "Enter weight: " << endl;
             cin >> weight;
-            bmi = BMICalculator(height, weight);
+            bmi = BMICalculator(height, weight); //Calling the bmi function with given arguments
             cout << "BMI for: " << name << " is " << bmi << endl;
-            SaveToFile(name, bmi);
+            SaveToFile(name, bmi); //Calling the save to file function
             break;
 
         case 2:
-            readFromFile();
+            readFromFile(); //Calling the read from file function
             break;
 
         case 3:
