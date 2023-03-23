@@ -1,5 +1,12 @@
 #include "OpenFile.h"
 
+/*
+* Saves to file
+* 
+* @param name - Takes name as string
+* @param bmi - Takes bmi as double
+* @return bmi - The given bmi for the values provided
+*/
 void SaveToFile(string name, double bmi)
 {
 	ofstream file;
@@ -12,6 +19,9 @@ void SaveToFile(string name, double bmi)
 	file.close(); //Close file
 }
 
+/*
+* Reads from file line by line and prints to terminal
+*/
 void readFromFile()
 {
 	cout << "Reading from file..." << endl;
